@@ -15,7 +15,9 @@ profile=$(realpath "$1")
 build=$2
 
 echo "::group::archiso"
-pacman -Syu --noconfirm --needed archiso
+# grub и syslinux нужны mkarchiso для режимов загрузки uefi.grub и bios.syslinux
+# (bootmodes в profiledef.sh)
+pacman -Syu --noconfirm --needed archiso grub syslinux
 echo "::endgroup::"
 
 # pacman.conf профиля берёт зеркала [leksos] из /etc/pacman.d самой машины.
