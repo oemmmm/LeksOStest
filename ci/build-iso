@@ -1,0 +1,36 @@
+#!/bin/bash
+# Сборка ISO LeksOS в контейнере Arch. Её запускает GitHub Actions:
+#
+#   docker run --privileged ... archlinux:latest ci/build-iso <профиль> <каталог>
+#
+# --privileged нужен pacstrap: он монтирует /proc, /sys и /dev внутри
+# собираемой системы. Готовый образ и его сумма — в <каталог>/out.
+set -euo pipefail
+
+if (( $# != 2 )); then
+	echo "использование: $0 <профиль> <каталог для сборки>" >&2
+	exit 2
+fi
+profile=$(realpath "$1")
+build=$2
+
+echo "::group::archiso"
+pacman -Syu --noconfirm --needed archiso
+echo "::endgroup::"
+
+# pacman.conf профиля берёт зеркала [leksos] из /etc/pacman.d самой машины.
+install -Dm644 "$profile/airootfs/etc/pacman.d/leksos-mirrorlist" /etc/pacman.d/leksos-mirrorlist
+
+rm -rf "$build/work" "$build/out"
+mkdir -p "$build/out" "$build/tmp"
+export SOURCE_DATE_EPOCH=${SOURCE_DATE_EPOCH:-$(date +%s)}
+TMPDIR="$build/tmp" mkarchiso -v -w "$build/work" -o "$build/out" "$profile"
+rm -rf "$build/work" "$build/tmp"
+
+cd "$build/out"
+for iso in *.iso; do
+	sha256sum -- "$iso" > "$iso.sha256"
+done
+# Дальше с образом работает не root, а пользователь runner.
+chmod -R a+rwX "$build/out"
+ls -lh

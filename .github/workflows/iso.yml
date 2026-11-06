@@ -1,0 +1,63 @@
+name: ISO LeksOS
+
+# Запуск вручную: Actions → ISO LeksOS → Run workflow.
+# Пакеты берутся из репозиториев в LeksPlay/pacman.conf, то есть из [leksos]
+# на вашем сервере, [core] и [extra] — всё, что должно попасть в образ,
+# сначала выложите туда.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: iso
+  cancel-in-progress: false
+
+jobs:
+  iso:
+    name: Сборка ISO
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      # Необязательно: выкладка образа на сервер (см. ci/README.md).
+      ISO_SSH_KEY: ${{ secrets.ISO_SSH_KEY }}
+      ISO_SSH_TARGET: ${{ secrets.ISO_SSH_TARGET }}
+      ISO_SSH_KNOWN_HOSTS: ${{ secrets.ISO_SSH_KNOWN_HOSTS }}
+    steps:
+      - name: Освободить место на диске
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc \
+            /usr/local/.ghcup /opt/hostedtoolcache /usr/local/share/boost \
+            /usr/share/swift /usr/local/share/powershell
+          sudo docker image prune -af >/dev/null
+          sudo mkdir -p /mnt/iso
+          df -h / /mnt
+
+      - uses: actions/checkout@v5
+
+      - name: Сборка образа
+        run: |
+          docker run --rm --privileged \
+            -v "$PWD:/w:ro" -v /mnt/iso:/build \
+            archlinux:latest \
+            /w/ci/build-iso /w/LeksPlay /build
+
+      - name: Образ в артефакты
+        uses: actions/upload-artifact@v4
+        with:
+          name: leksos-iso
+          path: /mnt/iso/out/
+          compression-level: 0
+          retention-days: 14
+
+      - name: Образ на сервер
+        if: env.ISO_SSH_KEY != '' && env.ISO_SSH_TARGET != ''
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$ISO_SSH_KEY" > ~/.ssh/leksos-iso
+          chmod 600 ~/.ssh/leksos-iso
+          printf '%s\n' "$ISO_SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          rsync -rtv --delay-updates \
+            -e "ssh -i $HOME/.ssh/leksos-iso -o StrictHostKeyChecking=yes" \
+            /mnt/iso/out/ "$ISO_SSH_TARGET"
