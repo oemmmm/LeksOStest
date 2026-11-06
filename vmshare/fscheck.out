@@ -1,0 +1,52 @@
+
+== режим
+BIOS
+
+== диски
+NAME   FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+fd0                                                                           
+sr0                                                                           
+vda                                                                           
+├─vda1                                                                        
+└─vda2 f2fs   1.17        e4737922-b349-4cf9-91db-f892588e9b89   21.6G    28% /
+vdb                                                                           
+├─vdb1                                                                        
+└─vdb2 xfs                95a5fadc-c960-4a10-8e5a-4f72f34e37b9                
+
+== корень
+/dev/vda2 f2fs rw,relatime,lazytime,background_gc=on,gc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,alloc_mode=default,checkpoint_merge,fsync_mode=posix,memory=normal,errors=continue,lookup_mode=perf
+
+== /boot
+часть корня
+
+== fstab
+UUID=e4737922-b349-4cf9-91db-f892588e9b89 /              f2fs    defaults,compress_algorithm=lz4,compress_chksum,gc_merge,lazytime 0 1
+
+== mkinitcpio
+MODULES=()
+HOOKS=(base systemd autodetect microcode kms modconf block keyboard sd-vconsole filesystems fsck)
+
+== GRUB
+GRUB_CMDLINE_LINUX_DEFAULT='nowatchdog nvme_load=YES loglevel=3'
+GRUB_CMDLINE_LINUX=""
+GRUB_TERMINAL_INPUT=console
+GRUB_THEME=/usr/share/grub/themes/leksos/theme.txt
+GRUB_GFXMODE=1280x720x32,auto
+
+== файлы /boot (S<1: сжат или разрежен)
+1.00125	15811350	/boot/initramfs-linux.img
+1.00116	17244672	/boot/vmlinuz-linux
+1.001	231193913	/boot/initramfs-linux-fallback.img
+
+== ключи pacman
+ok: gnupg не tmpfs
+/etc/pacman.d/gnupg/pubring.gpg
+-------------------------------
+pub   rsa4096 2026-10-30 [SC]
+
+== остатки установщика
+пакетов нет
+
+== pacman -Sy
+ core downloading...
+ extra downloading...

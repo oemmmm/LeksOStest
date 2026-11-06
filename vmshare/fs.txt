@@ -1,0 +1,46 @@
+
+== режим
+BIOS
+
+== диски
+NAME   FSTYPE   FSVER            LABEL         UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+fd0                                                                                                
+loop0  squashfs 4.0                                                                       0   100% /run/archiso/airootfs
+sr0    iso9660  Joliet Extension LEKSOS_202610 2026-10-22-19-31-08-00                     0   100% /run/archiso/bootmnt
+vda                                                                                                
+├─vda1                                                                                             
+└─vda2 ext4     1.0                            327f7b6f-74ad-4825-a78d-cab4e7f43709                
+vdb                                                                                                
+
+== корень
+airootfs overlay rw,relatime,lowerdir=/run/archiso/airootfs,upperdir=/run/archiso/cowspace/persistent_/x86_64/upperdir,workdir=/run/archiso/cowspace/persistent_/x86_64/workdir,uuid=on
+
+== /boot
+часть корня
+
+== fstab
+
+== mkinitcpio
+MODULES=()
+HOOKS=(base systemd autodetect microcode modconf kms keyboard sd-vconsole block filesystems fsck)
+
+== GRUB
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
+GRUB_CMDLINE_LINUX=""
+GRUB_TERMINAL_INPUT=console
+GRUB_GFXMODE=auto
+
+== файлы /boot (S<1: сжат или разрежен)
+
+== ключи pacman
+tmpfs поверх gnupg (плохо)
+/etc/pacman.d/gnupg/pubring.gpg
+-------------------------------
+pub   rsa4096 2026-10-24 [SC]
+
+== остатки установщика
+calamares-leksos 3.4.2-8
+
+== pacman -Sy
+ core downloading...
+ extra downloading...

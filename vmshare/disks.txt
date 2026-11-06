@@ -1,0 +1,69 @@
+NAME   FSTYPE   FSVER            LABEL         UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+fd0                                                                                                
+loop0  squashfs 4.0                                                                       0   100% /run/archiso/airootfs
+sr0    iso9660  Joliet Extension LEKSOS_202610 2026-10-28-23-25-27-00                     0   100% /run/archiso/bootmnt
+vda                                                                                                
+├─vda1                                                                                             
+└─vda2 xfs                                     95a5fadc-c960-4a10-8e5a-4f72f34e37b9                
+vdb                                                                                                
+== calamares
+87:2026-10-29 - 01:13:28 [6]:     Using module ID "packagechooser@bootloader" 
+94:2026-10-29 - 01:13:28 [6]:     ViewModule "packagechooser@bootloader" loading complete. 
+145:2026-10-29 - 01:13:29 [6]:     CppJobModule "shellprocess@bootloader-extra" loading complete. 
+199:2026-10-29 - 01:13:37 [6]: DEBUG (Qt): smartctl initialization failed for  "/dev/vda" :  No such file or directory
+200:2026-10-29 - 01:13:37 [6]: DEBUG (Qt): error during smart output parsing for  "/dev/vda" :  No such file or directory
+204:2026-10-29 - 01:13:37 [2]: WARNING (Qt): unknown file system type  ""  on  "/dev/vda1"
+205:2026-10-29 - 01:13:37 [6]: DEBUG (Qt): smartctl initialization failed for  "/dev/vdb" :  No such file or directory
+206:2026-10-29 - 01:13:37 [6]: DEBUG (Qt): error during smart output parsing for  "/dev/vdb" :  No such file or directory
+207:2026-10-29 - 01:13:38 [2]: WARNING (Qt): unknown file system type  ""  on  "/dev/vdb"
+210:2026-10-29 - 01:13:38 [6]:     .. Running QList("blkid", "/dev/vda") 
+211:2026-10-29 - 01:13:38 [6]:     .. Running QList("blkid", "/dev/vda1") 
+212:2026-10-29 - 01:13:38 [6]:     .. Running QList("blkid", "/dev/vda2") 
+213:2026-10-29 - 01:13:38 [6]:     .. Running QList("blkid", "/dev/vdb") 
+214:2026-10-29 - 01:13:38 [6]:     .. Target cmd: QList("blkid", "/dev/vdb") Exit code: 2 (no output) 
+219:2026-10-29 - 01:13:38 [6]:     .. "/dev/vda" 32212254720 DevName$fa00b5b2 DevNamePretty$b879a1af 
+220:2026-10-29 - 01:13:38 [6]:     .. "/dev/vdb" 32212254720 DevName$dfdb5bd7 DevNamePretty$49d0c3e6 
+249:2026-10-29 - 01:13:48 [6]:     .. Running QList("blkid", "-s", "TYPE", "-o", "value", "/dev/vda2") 
+251:2026-10-29 - 01:13:48 [6]:     Checking device "/dev/vda2" for fstab (fs= "ext4" ) 
+252:2026-10-29 - 01:13:48 [6]:     .. Running QList("mount", "-o", "ro,noload", "/dev/vda2", "/tmp/calamares-FVzIce") 
+263:2026-10-29 - 01:13:49 [6]:     Partition "/dev/vda2" authorized for resize + autopartition install. 
+266:     "/dev/vda2:Arch Linux (rolling):Arch:linux" 
+267:2026-10-29 - 01:13:49 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x5616fca8b840) without calling endResetModel first
+268:2026-10-29 - 01:13:49 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x5616fca8b840) without calling beginResetModel first
+278:2026-10-29 - 01:13:49 [6]:     Setting up actions for "/dev/vda" with 1 entries. 
+280:2026-10-29 - 01:13:49 [6]:     Can not resize "/dev/vda1" , filesystem "unknown" does not support resize. 
+282:2026-10-29 - 01:13:49 [6]:     Checking if "/dev/vda1" can be replaced. 
+287:2026-10-29 - 01:13:49 [6]:     Partition "/dev/vda2" authorized for resize + autopartition install. 
+288:2026-10-29 - 01:13:49 [6]:     .. contains resizable "/dev/vda2" 
+290:2026-10-29 - 01:13:49 [6]:     Checking if "/dev/vda2" can be replaced. 
+292:2026-10-29 - 01:13:49 [6]:     Partition "/dev/vda2" authorized for replace install. 
+293:2026-10-29 - 01:13:49 [6]:     .. contains replaceable "/dev/vda2" 
+816:2026-10-28 - 21:15:05 [6]:     "packagechooser@bootloader" selected "grub" 
+866:2026-10-28 - 21:15:06 [6]:     Setting up actions for "/dev/vda" with 1 entries. 
+868:2026-10-28 - 21:15:06 [6]:     Can not resize "/dev/vda1" , filesystem "unknown" does not support resize. 
+870:2026-10-28 - 21:15:06 [6]:     Checking if "/dev/vda1" can be replaced. 
+875:2026-10-28 - 21:15:06 [6]:     Partition "/dev/vda2" authorized for resize + autopartition install. 
+876:2026-10-28 - 21:15:06 [6]:     .. contains resizable "/dev/vda2" 
+878:2026-10-28 - 21:15:06 [6]:     Checking if "/dev/vda2" can be replaced. 
+880:2026-10-28 - 21:15:06 [6]:     Partition "/dev/vda2" authorized for replace install. 
+881:2026-10-28 - 21:15:06 [6]:     .. contains replaceable "/dev/vda2" 
+899:2026-10-28 - 21:15:09 [6]:     CreatePartitionTableJob::createTable trying to make table for device "/dev/vda" 
+900:2026-10-28 - 21:15:09 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x5616fca8b840) without calling endResetModel first
+901:2026-10-28 - 21:15:09 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x5616fca8b840) without calling beginResetModel first
+902:2026-10-28 - 21:15:10 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x5616fca8b840) without calling endResetModel first
+903:2026-10-28 - 21:15:10 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x5616fca8b840) without calling beginResetModel first
+904:2026-10-28 - 21:15:10 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x5616fca8b840) without calling endResetModel first
+905:2026-10-28 - 21:15:10 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x5616fca8b840) without calling beginResetModel first
+908:2026-10-28 - 21:15:10 [6]:     .. ## Device: "/dev/vda" 
+914:2026-10-28 - 21:15:10 [6]:     .. ## Device: "/dev/vdb" 
+921:2026-10-28 - 21:15:13 [6]: DEBUG (Qt): smartctl initialization failed for  "/dev/vda" :  No such file or directory
+922:2026-10-28 - 21:15:13 [6]: DEBUG (Qt): error during smart output parsing for  "/dev/vda" :  No such file or directory
+923:2026-10-28 - 21:15:13 [2]: WARNING (Qt): unknown file system type  ""  on  "/dev/vda1"
+924:2026-10-28 - 21:15:13 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x5616fca8b840) without calling endResetModel first
+925:2026-10-28 - 21:15:13 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x5616fca8b840) without calling beginResetModel first
+926:2026-10-28 - 21:15:13 [6]: void Calamares::restoreSelectedBootLoader(QComboBox&, const QString&)
+928:2026-10-28 - 21:15:13 [6]: void Calamares::restoreSelectedBootLoader(QComboBox&, const QString&)
+930:2026-10-28 - 21:15:13 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x5616fca8b840) without calling endResetModel first
+931:2026-10-28 - 21:15:13 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x5616fca8b840) without calling beginResetModel first
+932:2026-10-28 - 21:15:13 [6]: void Calamares::restoreSelectedBootLoader(QComboBox&, const QString&)
+934:2026-10-28 - 21:15:13 [6]: void Calamares::restoreSelectedBootLoader(QComboBox&, const QString&)

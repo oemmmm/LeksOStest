@@ -1,0 +1,59 @@
+== target
+/tmp/calamares-root-35uew6vm
+== lsblk
+NAME FSTYPE FSVER LABEL UUID FSAVAIL FSUSE% MOUNTPOINTS
+vdb                                         
+== parted
+Error: /dev/vdb: unrecognised disk label
+Model: Virtio Block Device (virtblk)
+Disk /dev/vdb: 32.2GB
+Sector size (logical/physical): 512B/512B
+Partition Table: unknown
+Disk Flags: 
+== mounts
+== grub-install in target
+==> WARNING: /tmp/calamares-root-35uew6vm is not a mountpoint. This may have undesirable side effects.
+mount: /tmp/calamares-root-35uew6vm/proc: mount point does not exist.
+       dmesg(1) may have more information after failed mount system call.
+==> ERROR: failed to setup chroot /tmp/calamares-root-35uew6vm
+== session.log
+/root/.cache/calamares/session.log:3890:2026-10-28 - 22:00:47 [6]: [PYTHON JOB]: "error: target not found: qt5-xmlpatterns" 
+/root/.cache/calamares/session.log:3893:2026-10-28 - 22:00:47 [6]: [PYTHON JOB]: "error: target not found: qt5-xmlpatterns" 
+/root/.cache/calamares/session.log:3896:2026-10-28 - 22:00:47 [6]: [PYTHON JOB]: "error: target not found: qt5-xmlpatterns" 
+/root/.cache/calamares/session.log:3899:2026-10-28 - 22:00:47 [6]: [PYTHON JOB]: "error: target not found: qt5-xmlpatterns" 
+/root/.cache/calamares/session.log:4021:2026-10-28 - 22:01:00 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4027:2026-10-28 - 22:01:00 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4033:2026-10-28 - 22:01:00 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4039:2026-10-28 - 22:01:00 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4045:2026-10-28 - 22:01:00 [6]: [PYTHON JOB]: "error: target not found: solid5" 
+/root/.cache/calamares/session.log:4048:2026-10-28 - 22:01:00 [6]: [PYTHON JOB]: "error: target not found: solid5" 
+/root/.cache/calamares/session.log:4051:2026-10-28 - 22:01:00 [6]: [PYTHON JOB]: "error: target not found: solid5" 
+/root/.cache/calamares/session.log:4054:2026-10-28 - 22:01:00 [6]: [PYTHON JOB]: "error: target not found: solid5" 
+/root/.cache/calamares/session.log:4182:2026-10-28 - 22:01:14 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4188:2026-10-28 - 22:01:14 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4194:2026-10-28 - 22:01:14 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4200:2026-10-28 - 22:01:14 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4508:2026-10-28 - 22:02:11 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4513:2026-10-28 - 22:02:11 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4518:2026-10-28 - 22:02:11 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4523:2026-10-28 - 22:02:11 [6]: [PYTHON JOB]: "error: failed to prepare transaction (could not satisfy dependencies)" 
+/root/.cache/calamares/session.log:4542:2026-10-28 - 22:02:12 [6]: [PYTHON JOB]: "error: target not found: yaml-cpp" 
+/root/.cache/calamares/session.log:4545:2026-10-28 - 22:02:12 [6]: [PYTHON JOB]: "error: target not found: yaml-cpp" 
+/root/.cache/calamares/session.log:4548:2026-10-28 - 22:02:12 [6]: [PYTHON JOB]: "error: target not found: yaml-cpp" 
+/root/.cache/calamares/session.log:4551:2026-10-28 - 22:02:12 [6]: [PYTHON JOB]: "error: target not found: yaml-cpp" 
+/root/.cache/calamares/session.log:4841:2026-10-28 - 22:05:18 [6]:     Error code 1 ignored by CommandList configuration. 
+/root/.cache/calamares/session.log:4867:2026-10-28 - 22:05:18 [6]:     Starting job "bootloader" ( 37 / 40 ) 
+/root/.cache/calamares/session.log:4869:2026-10-28 - 22:05:18 [6]:     Job file "/usr/lib/calamares/modules/bootloader/main.py" 
+/root/.cache/calamares/session.log:4871:2026-10-28 - 22:05:18 [6]:     .. Job description from pretty_name "bootloader" = "Install bootloader." 
+/root/.cache/calamares/session.log:4872:2026-10-28 - 22:05:18 [6]: [PYTHON JOB]: "Bootloader: grub (bios)" 
+/root/.cache/calamares/session.log:4873:2026-10-28 - 22:05:18 [6]:     .. Running QList("grub-install", "--target=i386-pc", "--recheck", "--force", "/dev/vdb") 
+/root/.cache/calamares/session.log:4879:2026-10-28 - 22:06:29 [6]:     .. Target cmd: QList("grub-install", "--target=i386-pc", "--recheck", "--force", "/dev/vdb") Exit code: 1 output:
+/root/.cache/calamares/session.log:4881:grub-install: error: unable to identify a filesystem in hostdisk//dev/vdb; safety check can't be performed.
+/root/.cache/calamares/session.log:4882:2026-10-28 - 22:06:29 [2]: WARNING: [PYTHON JOB]: "Command 'grub-install --target=i386-pc --recheck --force /dev/vdb' returned non-zero exit status 1." 
+/root/.cache/calamares/session.log:4883:2026-10-28 - 22:06:29 [6]: [PYTHON JOB]: "stdout:Installing for i386-pc platform.\ngrub-install: error: unable to identify a filesystem in hostdisk//dev/vdb; safety check can't be performed." 
+/root/.cache/calamares/session.log:4911:2026-10-28 - 22:06:30 [1]: void Calamares::ViewManager::onInstallationFailed(const QString&, const QString&)
+/root/.cache/calamares/session.log:4912:2026-10-28 - 22:06:30 [1]:     ERROR: Installation failed: "Bootloader installation error" 
+/root/.cache/calamares/session.log:4913:2026-10-28 - 22:06:30 [6]:     .. - message: "Bootloader installation error" 
+/root/.cache/calamares/session.log:4914:2026-10-28 - 22:06:30 [6]:     .. - details: The bootloader could not be installed. The installation command <pre>grub-install --target=i386-pc --recheck --force /dev/vdb</pre> returned error code 1.
+/root/.cache/calamares/session.log:4915:2026-10-28 - 22:06:35 [6]: void Calamares::ViewManager::onInstallationFailed(const QString&, const QString&)
+/root/.cache/calamares/session.log:4919:2026-10-28 - 22:06:35 [6]:     Notification not sent; completion: failed 

@@ -1,0 +1,9 @@
+[Layout]
+DisplayNames=,
+LayoutList=us,ru
+LayoutLoopCount=-1
+Model=pc105
+Options=grp:alt_shift_toggle
+ResetOldOptions=true
+Use=true
+VariantList=,

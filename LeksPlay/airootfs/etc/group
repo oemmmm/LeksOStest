@@ -1,0 +1,16 @@
+root:x:0:root
+sys:x:3:bin,leksplay
+network:x:90:leksplay
+power:x:98:leksplay
+adm:x:999:leksplay
+wheel:x:998:leksplay
+uucp:x:987:leksplay
+optical:x:990:leksplay
+rfkill:x:983:leksplay
+video:x:986:leksplay
+storage:x:988:leksplay
+audio:x:995:leksplay
+users:x:985:leksplay
+nopasswdlogin:x:966:leksplay
+autologin:x:967:leksplay
+leksplay:x:1000:

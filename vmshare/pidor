@@ -1,0 +1,8 @@
+{
+echo "== target"; ls -d /tmp/calamares-root-*
+echo "== lsblk"; lsblk -f /dev/vdb
+echo "== parted"; sudo parted -s /dev/vdb print
+echo "== mounts"; findmnt -R /tmp/calamares-root-*
+echo "== grub-install in target"; sudo arch-chroot /tmp/calamares-root-* grub-install -v --target=i386-pc --recheck --force /dev/vdb 2>&1 | tail -40
+echo "== session.log"; sudo grep -n -iE 'error|failed|grub-install|bootloader' /root/.cache/calamares/session.log /home/leksplay/.cache/calamares/session.log 2>/dev/null | tail -40
+} > /tmp/xfsboot.txt 2>&1; cat /tmp/xfsboot.txt

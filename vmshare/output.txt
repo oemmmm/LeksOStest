@@ -1,0 +1,49 @@
+7.2.11-arch1-1
+warning: database file for 'leksos' does not exist (use '-Sy' to download)
+warning: database file for 'core' does not exist (use '-Sy' to download)
+warning: database file for 'extra' does not exist (use '-Sy' to download)
+linux 7.2.11.arch1-1
+linux-api-headers 7.3-1
+linux-atm 2.5.2-9
+linux-firmware 20260916-1
+linux-firmware-amd 20260916-1
+linux-firmware-amdgpu 20260916-1
+linux-firmware-atheros 20260916-1
+linux-firmware-broadcom 20260916-1
+linux-firmware-cirrus 20260916-1
+linux-firmware-intel 20260916-1
+linux-firmware-marvell 20260916-1
+linux-firmware-mediatek 20260916-1
+linux-firmware-nvidia 20260916-1
+linux-firmware-other 20260916-1
+linux-firmware-radeon 20260916-1
+linux-firmware-realtek 20260916-1
+linux-firmware-ti 20260916-1
+linux-firmware-whence 20260916-1
+linux-headers 7.2.11.arch1-1
+modinfo: ERROR: Module zfs not found.
+mount
+partition
+umount
+zfs
+zfshostid
+grep: /etc/calamares/branding/default/2-alci.png: binary file matches
+grep: /etc/calamares/images/cosmic.webp: binary file matches
+grep: /etc/calamares/images/gnome.webp: binary file matches
+grep: /etc/calamares/images/hyprland.webp: binary file matches
+grep: /etc/calamares/images/mangowm.webp: binary file matches
+/etc/calamares/modules/partition.conf:36:# This setting determines if encryption should be allowed when using zfs.  This
+/etc/calamares/modules/partition.conf:37:# setting has no effect unless zfs support is provided.
+/etc/calamares/modules/partition.conf:40:# support zfs encryption.
+/etc/calamares/modules/partition.conf:44:allowZfsEncryption: true
+/etc/calamares/modules/partition.conf:60:availableFileSystemTypes:  ["btrfs","xfs","ext4","f2fs","zfs"]
+/etc/calamares/modules/partition.conf:67:      allowZfsEncryption: false
+/etc/calamares/modules/partition.conf:69:      availableFileSystemTypes:  ["btrfs","xfs","ext4","f2fs","zfs"]
+/etc/calamares/modules/partition.conf:76:      allowZfsEncryption: true
+/etc/calamares/modules/partition.conf:78:      availableFileSystemTypes:  ["btrfs","xfs","ext4","f2fs","zfs"]
+/etc/calamares/modules/services-systemd.conf:40:   - name: "zfs-import-cache"
+/etc/calamares/modules/services-systemd.conf:44:   - name: "zfs-mount"
+/etc/calamares/modules/services-systemd.conf:48:   - name: "zfs-import.target"
+/etc/calamares/modules/services-systemd.conf:52:   - name: "zfs.target"
+/etc/calamares/modules/shellprocess-leksos-cleanup.conf:24:  - "-rm -f /etc/modules-load.d/zfs.conf"
+/etc/calamares/settings.conf:164:#  - zfs

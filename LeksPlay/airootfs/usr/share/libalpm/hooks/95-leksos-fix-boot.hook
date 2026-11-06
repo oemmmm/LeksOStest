@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Path
+Target = usr/lib/modules/*/vmlinuz
+Target = usr/lib/initcpio/*
+
+[Action]
+Description = Pad kernel/initramfs sizes for GRUB on btrfs
+When = PostTransaction
+Exec = /usr/local/bin/leksos-fix-boot

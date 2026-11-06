@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Calamares
+Comment=ololozz
+Comment[ru]=ололоцц
+Icon=calamares
+Exec=pkexec calamares
+Terminal=false
+Categories=System;

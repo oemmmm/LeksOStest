@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Lekszon
+Exec=firefox http://www.lekshuesos.online/LeksZON
+Icon=/usr/share/ololozz/lekszonlogo.png
+Terminal=false
+Categories=Network;

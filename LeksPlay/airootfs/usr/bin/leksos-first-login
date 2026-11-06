@@ -1,0 +1,27 @@
+#!/bin/bash
+MARKER="$HOME/.config/leksos-first-login-done"
+WALLPAPER="/usr/share/wallpapers/leksos-wallpapers/Umamuleks.jpg"
+LOG="$HOME/.cache/leksos-first-login.log"
+
+[ -e "$MARKER" ] && exit 0
+[ -f "$WALLPAPER" ] || exit 0
+mkdir -p "$HOME/.cache" "$HOME/.config"
+exec >>"$LOG" 2>&1
+echo "== $(date) start"
+
+# ждём, пока оболочка появится на D-Bus (до 2 минут)
+for i in $(seq 1 120); do
+    busctl --user list --no-legend 2>/dev/null | grep -q 'org.kde.plasmashell' && break
+    sleep 1
+done
+echo "plasmashell on bus after ${i}s"
+sleep 5
+
+ok=0
+for i in 1 2 3; do
+    if plasma-apply-wallpaperimage "$WALLPAPER"; then ok=1; fi
+    sleep 10
+done
+
+[ "$ok" = 1 ] && touch "$MARKER"
+echo "done ok=$ok"

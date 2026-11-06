@@ -1,0 +1,469 @@
+[sam@sam-leksosx8664 ~]$ sudo ls -la /var/lib/plasmalogin/.config
+total 32
+drwxr-xr-x 1 plasmalogin plasmalogin   184 окт 28 06:35 .
+drwxr-x--- 1 plasmalogin plasmalogin    38 окт 28 06:35 ..
+drwxr-xr-x 1 plasmalogin plasmalogin   100 окт 28 06:35 kdedefaults
+-rw------- 1 plasmalogin plasmalogin  3517 окт 28 06:35 kdeglobals
+-rw------- 1 plasmalogin plasmalogin 12150 окт 28 06:35 kglobalshortcutsrc
+-rw-r--r-- 1 plasmalogin plasmalogin  2584 окт 28 06:54 kwinoutputconfig.json
+-rw------- 1 plasmalogin plasmalogin   431 окт 28 06:35 kwinrc
+-rw------- 1 plasmalogin plasmalogin    22 окт 28 06:35 kwinrulesrc
+-rw------- 1 plasmalogin plasmalogin    27 окт 28 06:35 plasma-localerc
+[sam@sam-leksosx8664 ~]$ sudo sh -c 'grep -r . /var/lib/plasmalogin/.config 2>/dev/null'
+/var/lib/plasmalogin/.config/kdedefaults/kdeglobals:[General]
+/var/lib/plasmalogin/.config/kdedefaults/kdeglobals:ColorScheme=BreezeLight
+/var/lib/plasmalogin/.config/kdedefaults/kdeglobals:[Icons]
+/var/lib/plasmalogin/.config/kdedefaults/kdeglobals:Theme=breeze
+/var/lib/plasmalogin/.config/kdedefaults/kdeglobals:[KDE]
+/var/lib/plasmalogin/.config/kdedefaults/kdeglobals:widgetStyle=Breeze
+/var/lib/plasmalogin/.config/kdedefaults/plasmarc:[Theme]
+/var/lib/plasmalogin/.config/kdedefaults/plasmarc:name=default
+/var/lib/plasmalogin/.config/kdedefaults/kcminputrc:[Mouse]
+/var/lib/plasmalogin/.config/kdedefaults/kcminputrc:cursorTheme=breeze_cursors
+/var/lib/plasmalogin/.config/kdedefaults/kwinrc:[org.kde.kdecoration2]
+/var/lib/plasmalogin/.config/kdedefaults/kwinrc:NoPlugin=false
+/var/lib/plasmalogin/.config/kdedefaults/kwinrc:library=org.kde.breeze
+/var/lib/plasmalogin/.config/kdedefaults/kwinrc:theme=Breeze
+/var/lib/plasmalogin/.config/kdedefaults/ksplashrc:[KSplash]
+/var/lib/plasmalogin/.config/kdedefaults/ksplashrc:Engine=KSplashQML
+/var/lib/plasmalogin/.config/kdedefaults/ksplashrc:Theme=org.kde.breeze.desktop
+/var/lib/plasmalogin/.config/kdedefaults/package:org.kde.breeze.desktop
+/var/lib/plasmalogin/.config/kdeglobals:[ColorEffects:Disabled]
+/var/lib/plasmalogin/.config/kdeglobals:ChangeSelectionColor=
+/var/lib/plasmalogin/.config/kdeglobals:Color=56,56,56
+/var/lib/plasmalogin/.config/kdeglobals:ColorAmount=0
+/var/lib/plasmalogin/.config/kdeglobals:ColorEffect=0
+/var/lib/plasmalogin/.config/kdeglobals:ContrastAmount=0.65
+/var/lib/plasmalogin/.config/kdeglobals:ContrastEffect=1
+/var/lib/plasmalogin/.config/kdeglobals:Enable=
+/var/lib/plasmalogin/.config/kdeglobals:IntensityAmount=0.1
+/var/lib/plasmalogin/.config/kdeglobals:IntensityEffect=2
+/var/lib/plasmalogin/.config/kdeglobals:[ColorEffects:Inactive]
+/var/lib/plasmalogin/.config/kdeglobals:ChangeSelectionColor=true
+/var/lib/plasmalogin/.config/kdeglobals:Color=112,111,110
+/var/lib/plasmalogin/.config/kdeglobals:ColorAmount=0.025
+/var/lib/plasmalogin/.config/kdeglobals:ColorEffect=2
+/var/lib/plasmalogin/.config/kdeglobals:ContrastAmount=0.1
+/var/lib/plasmalogin/.config/kdeglobals:ContrastEffect=2
+/var/lib/plasmalogin/.config/kdeglobals:Enable=false
+/var/lib/plasmalogin/.config/kdeglobals:IntensityAmount=0
+/var/lib/plasmalogin/.config/kdeglobals:IntensityEffect=0
+/var/lib/plasmalogin/.config/kdeglobals:[Colors:Button]
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundAlternate=163,212,250
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundNormal=252,252,252
+/var/lib/plasmalogin/.config/kdeglobals:DecorationFocus=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:DecorationHover=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundActive=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundInactive=112,125,138
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundLink=41,128,185
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNegative=218,68,83
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNeutral=246,116,0
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNormal=35,38,41
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundPositive=39,174,96
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundVisited=155,89,182
+/var/lib/plasmalogin/.config/kdeglobals:[Colors:Complementary]
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundAlternate=27,30,32
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundNormal=42,46,50
+/var/lib/plasmalogin/.config/kdeglobals:DecorationFocus=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:DecorationHover=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundActive=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundInactive=161,169,177
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundLink=29,153,243
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNegative=218,68,83
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNeutral=246,116,0
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNormal=252,252,252
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundPositive=39,174,96
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundVisited=155,89,182
+/var/lib/plasmalogin/.config/kdeglobals:[Colors:Header]
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundAlternate=239,240,241
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundNormal=222,224,226
+/var/lib/plasmalogin/.config/kdeglobals:DecorationFocus=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:DecorationHover=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundActive=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundInactive=112,125,138
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundLink=41,128,185
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNegative=218,68,83
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNeutral=246,116,0
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNormal=35,38,41
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundPositive=39,174,96
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundVisited=155,89,182
+/var/lib/plasmalogin/.config/kdeglobals:[Colors:Header][Inactive]
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundAlternate=227,229,231
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundNormal=239,240,241
+/var/lib/plasmalogin/.config/kdeglobals:DecorationFocus=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:DecorationHover=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundActive=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundInactive=112,125,138
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundLink=41,128,185
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNegative=218,68,83
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNeutral=246,116,0
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNormal=35,38,41
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundPositive=39,174,96
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundVisited=155,89,182
+/var/lib/plasmalogin/.config/kdeglobals:[Colors:Selection]
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundAlternate=163,212,250
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundNormal=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:DecorationFocus=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:DecorationHover=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundActive=255,255,255
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundInactive=112,125,138
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundLink=253,188,75
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNegative=176,55,69
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNeutral=198,92,0
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNormal=255,255,255
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundPositive=23,104,57
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundVisited=155,89,182
+/var/lib/plasmalogin/.config/kdeglobals:[Colors:Tooltip]
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundAlternate=239,240,241
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundNormal=247,247,247
+/var/lib/plasmalogin/.config/kdeglobals:DecorationFocus=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:DecorationHover=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundActive=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundInactive=112,125,138
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundLink=41,128,185
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNegative=218,68,83
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNeutral=246,116,0
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNormal=35,38,41
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundPositive=39,174,96
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundVisited=155,89,182
+/var/lib/plasmalogin/.config/kdeglobals:[Colors:View]
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundAlternate=247,247,247
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundNormal=255,255,255
+/var/lib/plasmalogin/.config/kdeglobals:DecorationFocus=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:DecorationHover=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundActive=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundInactive=112,125,138
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundLink=41,128,185
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNegative=218,68,83
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNeutral=246,116,0
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNormal=35,38,41
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundPositive=39,174,96
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundVisited=155,89,182
+/var/lib/plasmalogin/.config/kdeglobals:[Colors:Window]
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundAlternate=227,229,231
+/var/lib/plasmalogin/.config/kdeglobals:BackgroundNormal=239,240,241
+/var/lib/plasmalogin/.config/kdeglobals:DecorationFocus=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:DecorationHover=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundActive=61,174,233
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundInactive=112,125,138
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundLink=41,128,185
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNegative=218,68,83
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNeutral=246,116,0
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundNormal=35,38,41
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundPositive=39,174,96
+/var/lib/plasmalogin/.config/kdeglobals:ForegroundVisited=155,89,182
+/var/lib/plasmalogin/.config/kdeglobals:[General]
+/var/lib/plasmalogin/.config/kdeglobals:ColorSchemeHash=9980f09638f2f885144ced7c6086ae56addf7c8c
+/var/lib/plasmalogin/.config/kdeglobals:[KDE]
+/var/lib/plasmalogin/.config/kdeglobals:contrast=4
+/var/lib/plasmalogin/.config/kdeglobals:frameContrast=0.2
+/var/lib/plasmalogin/.config/kdeglobals:[WM]
+/var/lib/plasmalogin/.config/kdeglobals:activeBackground=227,229,231
+/var/lib/plasmalogin/.config/kdeglobals:activeBlend=227,229,231
+/var/lib/plasmalogin/.config/kdeglobals:activeForeground=35,38,41
+/var/lib/plasmalogin/.config/kdeglobals:inactiveBackground=239,240,241
+/var/lib/plasmalogin/.config/kdeglobals:inactiveBlend=239,240,241
+/var/lib/plasmalogin/.config/kdeglobals:inactiveForeground=112,125,138
+/var/lib/plasmalogin/.config/plasma-localerc:[Formats]
+/var/lib/plasmalogin/.config/plasma-localerc:LANG=en_US.UTF-8
+/var/lib/plasmalogin/.config/kwinrulesrc:[General]
+/var/lib/plasmalogin/.config/kwinrulesrc:Order=steam
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:[
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:    {
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:        "data": [
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:            {
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "abmLevel": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "allowDdcCi": true,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "allowSdrSoftwareBrightness": true,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "autoBrightnessCurve": [
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                    [
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        1
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                    ]
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                ],
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "autoRotation": "InTabletMode",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "automaticBrightness": false,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "brightness": 1,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "colorPowerTradeoff": "PreferEfficiency",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "colorProfileSource": "sRGB",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "connectorName": "Virtual-1",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "detectedDdcCi": false,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "edidHash": "e427b172321a1a5594dc4ae5aad6fcf8",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "edidIdentifier": "RHT 4660 0 42 2014 0",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "edrPolicy": "always",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "hdrColorProfileSource": "EDID",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "hdrIccProfilePath": "",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "highDynamicRange": false,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "iccProfilePath": "",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "maxBitsPerColor": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "mode": {
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                    "cvt": {
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "clock": 32140,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "flags": 10,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "hdisplay": 640,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "hskew": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "hsyncEnd": 819,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "hsyncStart": 800,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "htotal": 864,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "vdisplay": 480,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "vscan": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "vsyncEnd": 484,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "vsyncStart": 482,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "vtotal": 496
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                    },
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                    "flags": 1
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                },
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "overscan": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "rgbRange": "Automatic",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "scale": 1,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "sdrBrightness": 200,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "sdrGamutWideness": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "sharpness": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "transform": "Normal",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "uuid": "7c2e7990-e21e-47d4-b655-1ab3d3cb2473",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "vrrPolicy": "Never",
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "wideColorGamut": false
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:            }
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:        ],
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:        "name": "outputs"
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:    },
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:    {
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:        "data": [
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:            {
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "lidClosed": false,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                "outputs": [
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                    {
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "enabled": true,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "outputIndex": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "position": {
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                            "x": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                            "y": 0
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        },
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "priority": 0,
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                        "replicationSource": ""
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                    }
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:                ]
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:            }
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:        ],
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:        "name": "setups"
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:    }
+/var/lib/plasmalogin/.config/kwinoutputconfig.json:]
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:[KDE Keyboard Layout Switcher]
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:_k_friendly_name=Keyboard Layout Switcher
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:[kwin]
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Cycle Overview=none,none,Cycle through Overview and Grid View
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Cycle Overview Opposite=none,none,Cycle through Grid View and Overview
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Decrease Opacity=none,none,Decrease Opacity of Active Window by 5%
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Edit Tiles=Meta+T,Meta+T,Toggle Tiles Editor
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Expose=Ctrl+F9\tMeta+F9,Ctrl+F9\tMeta+F9,Toggle Present Windows (Current desktop)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:ExposeAll=Launch (C)\tCtrl+F10\tMeta+F10,Launch (C)\tCtrl+F10\tMeta+F10,Toggle Present Windows (All desktops)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:ExposeClass=Ctrl+F7\tMeta+F7,Ctrl+F7\tMeta+F7,Toggle Present Windows (Window class)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:ExposeClassCurrentDesktop=none,none,Toggle Present Windows (Window class on current desktop)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Grid View=Meta+G,Meta+G,Toggle Grid View
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Increase Opacity=none,none,Increase Opacity of Active Window by 5%
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Move Tablet to Next LogicalOutput=none,none,Move the tablet to the next output
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:MoveMouseToCenter=Meta+F6,Meta+F6,Center Pointer in Screen
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:MoveMouseToFocus=Meta+F5,Meta+F5,Center Pointer in Focused Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:MoveZoomDown=none,none,Move Zoomed Area Downwards
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:MoveZoomLeft=none,none,Move Zoomed Area to Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:MoveZoomRight=none,none,Move Zoomed Area to Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:MoveZoomUp=none,none,Move Zoomed Area Upwards
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Overview=Meta+W,Meta+W,Toggle Overview
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Setup Window Shortcut=none,none,Setup Window Shortcut
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Show Desktop=Meta+D,Meta+D,Peek at Desktop
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch One Desktop Down=Meta+Ctrl+Down,Meta+Ctrl+Down,Switch One Desktop Down
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch One Desktop Up=Meta+Ctrl+Up,Meta+Ctrl+Up,Switch One Desktop Up
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch One Desktop to the Left=Meta+Ctrl+Left,Meta+Ctrl+Left,Switch One Desktop to the Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch One Desktop to the Right=Meta+Ctrl+Right,Meta+Ctrl+Right,Switch One Desktop to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch Window Down=Meta+Alt+Down,Meta+Alt+Down,Switch to Window Below
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch Window Left=Meta+Alt+Left,Meta+Alt+Left,Switch to Window to the Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch Window Right=Meta+Alt+Right,Meta+Alt+Right,Switch to Window to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch Window Up=Meta+Alt+Up,Meta+Alt+Up,Switch to Window Above
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 1=Ctrl+F1\tMeta+F1,Ctrl+F1\tMeta+F1,Switch to Desktop 1
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 10=none,none,Switch to Desktop 10
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 11=none,none,Switch to Desktop 11
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 12=none,none,Switch to Desktop 12
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 13=none,none,Switch to Desktop 13
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 14=none,none,Switch to Desktop 14
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 15=none,none,Switch to Desktop 15
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 16=none,none,Switch to Desktop 16
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 17=none,none,Switch to Desktop 17
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 18=none,none,Switch to Desktop 18
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 19=none,none,Switch to Desktop 19
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 2=Ctrl+F2\tMeta+F2,Ctrl+F2\tMeta+F2,Switch to Desktop 2
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 20=none,none,Switch to Desktop 20
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 21=none,none,Switch to Desktop 21
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 22=none,none,Switch to Desktop 22
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 23=none,none,Switch to Desktop 23
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 24=none,none,Switch to Desktop 24
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 25=none,none,Switch to Desktop 25
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 3=Ctrl+F3\tMeta+F3,Ctrl+F3\tMeta+F3,Switch to Desktop 3
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 4=Ctrl+F4\tMeta+F4,Ctrl+F4\tMeta+F4,Switch to Desktop 4
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 5=none,none,Switch to Desktop 5
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 6=none,none,Switch to Desktop 6
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 7=none,none,Switch to Desktop 7
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 8=none,none,Switch to Desktop 8
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Desktop 9=none,none,Switch to Desktop 9
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Next Desktop=none,none,Switch to Next Desktop
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Next Screen=none,none,Switch to Next Screen
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Previous Desktop=none,none,Switch to Previous Desktop
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Previous Screen=none,none,Switch to Previous Screen
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen 0=none,none,Switch to Screen 0
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen 1=none,none,Switch to Screen 1
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen 2=none,none,Switch to Screen 2
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen 3=none,none,Switch to Screen 3
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen 4=none,none,Switch to Screen 4
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen 5=none,none,Switch to Screen 5
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen 6=none,none,Switch to Screen 6
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen 7=none,none,Switch to Screen 7
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen Above=none,none,Switch to Screen Above
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen Below=none,none,Switch to Screen Below
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen to the Left=none,none,Switch to Screen to the Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen to the Right=none,none,Switch to Screen to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Toggle Night Color=none,none,Suspend/Resume Night Light
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Toggle Show Compositing=none,none,Toggle “Show Compositing” effect
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Toggle Window Raise/Lower=none,none,Toggle Window Raise/Lower
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows=Alt+Tab\tMeta+Tab,Alt+Tab\tMeta+Tab,Walk Through Windows
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows (Reverse)=Alt+Shift+Tab\tMeta+Shift+Tab,Alt+Shift+Tab\tMeta+Shift+Tab,Walk Through Windows (Reverse)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows Alternative=none,none,Walk Through Windows Alternative
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows Alternative (Reverse)=none,none,Walk Through Windows Alternative (Reverse)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows of Current Application=Alt+`\tMeta+`,Alt+`\tMeta+`,Walk Through Windows of Current Application
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows of Current Application (Reverse)=Alt+~\tMeta+~,Alt+~\tMeta+~,Walk Through Windows of Current Application (Reverse)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows of Current Application Alternative=none,none,Walk Through Windows of Current Application Alternative
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows of Current Application Alternative (Reverse)=none,none,Walk Through Windows of Current Application Alternative (Reverse)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Above Other Windows=none,none,Keep Window Above Others
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Below Other Windows=none,none,Keep Window Below Others
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Close=Alt+F4,Alt+F4,Close Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Custom Quick Tile Bottom=none,none,Custom Quick Tile Window to the Bottom
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Custom Quick Tile Left=none,none,Custom Quick Tile Window to the Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Custom Quick Tile Right=none,none,Custom Quick Tile Window to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Custom Quick Tile Top=none,none,Custom Quick Tile Window to the Top
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Fullscreen=none,none,Make Window Fullscreen
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Grow Horizontal=none,none,Expand Window Horizontally
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Grow Vertical=none,none,Expand Window Vertically
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Lower=none,none,Lower Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Maximize=Meta+PgUp,Meta+PgUp,Maximize Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Maximize Horizontal=none,none,Maximize Window Horizontally
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Maximize Vertical=none,none,Maximize Window Vertically
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Minimize=Meta+PgDown,Meta+PgDown,Minimize Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Move=none,none,Move Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Move Center=none,none,Move Window to the Center
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window No Border=none,none,Toggle Window Titlebar and Frame
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window On All Desktops=none,none,Keep Window on All Desktops
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Desktop Down=Meta+Ctrl+Shift+Down,Meta+Ctrl+Shift+Down,Window One Desktop Down
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Desktop Up=Meta+Ctrl+Shift+Up,Meta+Ctrl+Shift+Up,Window One Desktop Up
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Desktop to the Left=Meta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Desktop to the Right=Meta+Ctrl+Shift+Right,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Screen Down=none,none,Move Window One Screen Down
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Screen Up=none,none,Move Window One Screen Up
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Screen to the Left=none,none,Move Window One Screen to the Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Screen to the Right=none,none,Move Window One Screen to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Operations Menu=Alt+F3,Alt+F3,Window Menu
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Pack Down=none,none,Move Window Down
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Pack Left=none,none,Move Window Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Pack Right=none,none,Move Window Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Pack Up=none,none,Move Window Up
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Quick Tile Bottom=Meta+Down,Meta+Down,Quick Tile Window to the Bottom
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Quick Tile Bottom Left=none,none,Quick Tile Window to the Bottom Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Quick Tile Bottom Right=none,none,Quick Tile Window to the Bottom Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Quick Tile Left=Meta+Left,Meta+Left,Quick Tile Window to the Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Quick Tile Right=Meta+Right,Meta+Right,Quick Tile Window to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Quick Tile Top=Meta+Up,Meta+Up,Quick Tile Window to the Top
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Quick Tile Top Left=none,none,Quick Tile Window to the Top Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Quick Tile Top Right=none,none,Quick Tile Window to the Top Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Raise=none,none,Raise Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Resize=none,none,Resize Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Restore=Meta+Backspace,Meta+Backspace,Restore Window
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Shrink Horizontal=none,none,Shrink Window Horizontally
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Shrink Vertical=none,none,Shrink Window Vertically
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 1=none,none,Window to Desktop 1
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 10=none,none,Window to Desktop 10
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 11=none,none,Window to Desktop 11
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 12=none,none,Window to Desktop 12
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 13=none,none,Window to Desktop 13
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 14=none,none,Window to Desktop 14
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 15=none,none,Window to Desktop 15
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 16=none,none,Window to Desktop 16
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 17=none,none,Window to Desktop 17
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 18=none,none,Window to Desktop 18
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 19=none,none,Window to Desktop 19
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 2=none,none,Window to Desktop 2
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 20=none,none,Window to Desktop 20
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 21=none,none,Window to Desktop 21
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 22=none,none,Window to Desktop 22
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 23=none,none,Window to Desktop 23
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 24=none,none,Window to Desktop 24
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 25=none,none,Window to Desktop 25
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 3=none,none,Window to Desktop 3
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 4=none,none,Window to Desktop 4
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 5=none,none,Window to Desktop 5
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 6=none,none,Window to Desktop 6
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 7=none,none,Window to Desktop 7
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 8=none,none,Window to Desktop 8
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Desktop 9=none,none,Window to Desktop 9
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Next Desktop=none,none,Window to Next Desktop
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Next Screen=Meta+Shift+Right,Meta+Shift+Right,Move Window to Next Screen
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Previous Desktop=none,none,Window to Previous Desktop
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Previous Screen=Meta+Shift+Left,Meta+Shift+Left,Move Window to Previous Screen
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Screen 0=none,none,Move Window to Screen 0
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Screen 1=none,none,Move Window to Screen 1
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Screen 2=none,none,Move Window to Screen 2
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Screen 3=none,none,Move Window to Screen 3
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Screen 4=none,none,Move Window to Screen 4
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Screen 5=none,none,Move Window to Screen 5
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Screen 6=none,none,Move Window to Screen 6
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Screen 7=none,none,Move Window to Screen 7
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:_k_friendly_name=KWin
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:disableInputCapture=Meta+Shift+Esc,Meta+Shift+Esc,Disable Active Input Capture
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:view_actual_size=Meta+0,Meta+0,Zoom to Actual Size
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:view_zoom_in=Meta++\tMeta+=,Meta++\tMeta+=,Zoom In
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:view_zoom_out=Meta+-,Meta+-,Zoom Out
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:[kwin][$InverseAction]
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Cycle Overview=Cycle Overview Opposite
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Decrease Opacity=Increase Opacity
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:MoveZoomDown=MoveZoomUp
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:MoveZoomLeft=MoveZoomRight
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch One Desktop Up=Switch One Desktop Down
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch One Desktop to the Left=Switch One Desktop to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch Window Right=Switch Window Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch Window Up=Switch Window Down
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Next Desktop=Switch to Previous Desktop
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Previous Screen=Switch to Next Screen
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen Above=Switch to Screen Below
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Switch to Screen to the Left=Switch to Screen to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows=Walk Through Windows (Reverse)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows Alternative=Walk Through Windows Alternative (Reverse)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows of Current Application=Walk Through Windows of Current Application (Reverse)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Walk Through Windows of Current Application Alternative=Walk Through Windows of Current Application Alternative (Reverse)
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Grow Horizontal=Window Shrink Horizontal
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Grow Vertical=Window Shrink Vertical
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Desktop Up=Window One Desktop Down
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Desktop to the Left=Window One Desktop to the Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Screen Up=Window One Screen Down
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window One Screen to the Right=Window One Screen to the Left
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Pack Left=Window Pack Right
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Pack Up=Window Pack Down
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window Raise=Window Lower
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Next Screen=Window to Previous Screen
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Window to Previous Desktop=Window to Next Desktop
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:view_zoom_out=view_zoom_in
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:[plasmashell]
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:Slideshow Wallpaper Next Image=none,none,Next Wallpaper Image
+/var/lib/plasmalogin/.config/kglobalshortcutsrc:_k_friendly_name=plasmashell
+/var/lib/plasmalogin/.config/kwinrc:[Desktops]
+/var/lib/plasmalogin/.config/kwinrc:Id_1=aee7b834-072f-4983-9ac0-81b4c3baba87
+/var/lib/plasmalogin/.config/kwinrc:Number=1
+/var/lib/plasmalogin/.config/kwinrc:Rows=1
+/var/lib/plasmalogin/.config/kwinrc:[Tiling][aee7b834-072f-4983-9ac0-81b4c3baba87][]
+/var/lib/plasmalogin/.config/kwinrc:padding=4
+/var/lib/plasmalogin/.config/kwinrc:tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+/var/lib/plasmalogin/.config/kwinrc:[Tiling][aee7b834-072f-4983-9ac0-81b4c3baba87][7c2e7990-e21e-47d4-b655-1ab3d3cb2473]
+/var/lib/plasmalogin/.config/kwinrc:padding=4
+/var/lib/plasmalogin/.config/kwinrc:tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+/var/lib/plasmalogin/.config/kwinrc:[Xwayland]
+/var/lib/plasmalogin/.config/kwinrc:Scale=1
+[sam@sam-leksosx8664 ~]$ 

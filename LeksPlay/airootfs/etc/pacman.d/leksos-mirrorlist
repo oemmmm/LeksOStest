@@ -1,0 +1,7 @@
+##
+## LeksOS repository mirrorlist
+## If you want to submit your mirror, comment on github repo
+##
+
+## Nederlands
+Server = https://repo.lekshuesos.online/leksos/$arch

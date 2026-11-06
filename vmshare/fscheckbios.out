@@ -1,0 +1,51 @@
+
+== режим
+BIOS
+
+== диски
+NAME   FSTYPE     FSVER LABEL    UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+fd0                                                                                  
+sr0                                                                                  
+vda                                                                                  
+├─vda1                                                                               
+└─vda2 zfs_member 5000  zpleksos 9805307504246998544                                 
+vdb                                                                                  
+├─vdb1                                                                               
+└─vdb2 xfs                       95a5fadc-c960-4a10-8e5a-4f72f34e37b9                
+
+== корень
+zpleksos/ROOT/leks/root zfs rw,noatime,xattr,posixacl,casesensitive
+
+== /boot
+часть корня
+
+== fstab
+
+== mkinitcpio
+MODULES=()
+HOOKS=(base udev autodetect microcode kms modconf block keyboard keymap consolefont zfs filesystems fsck)
+
+== GRUB
+GRUB_CMDLINE_LINUX_DEFAULT='zfs=zpleksos/ROOT/leks/root nowatchdog loglevel=3'
+GRUB_CMDLINE_LINUX=""
+GRUB_TERMINAL_INPUT=console
+GRUB_THEME=/usr/share/grub/themes/leksos/theme.txt
+GRUB_GFXMODE=1280x720x32,auto
+
+== файлы /boot (S<1: сжат или разрежен)
+0.998922	235061296	/boot/initramfs-linux-fallback.img
+1.00108	19108184	/boot/initramfs-linux.img
+0.992162	17244672	/boot/vmlinuz-linux
+
+== ключи pacman
+ok: gnupg не tmpfs
+/etc/pacman.d/gnupg/pubring.gpg
+-------------------------------
+pub   rsa4096 2026-10-31 [SC]
+
+== остатки установщика
+пакетов нет
+
+== pacman -Sy
+ core downloading...
+ extra downloading...

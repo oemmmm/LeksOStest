@@ -1,0 +1,11 @@
+#!/bin/bash
+[ "$(stat -f -c %T /boot)" = btrfs ] || exit 0
+for f in /boot/vmlinuz-* /boot/initramfs-*.img /boot/*-ucode.img; do
+  [ -f "$f" ] || continue
+  dd if="$f" of="$f.new" bs=1M status=none || { rm -f "$f.new"; continue; }
+  chmod --reference="$f" "$f.new"
+  chown --reference="$f" "$f.new"
+  mv -f "$f.new" "$f"
+done
+sync
+exit 0
