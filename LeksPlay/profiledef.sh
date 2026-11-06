@@ -23,6 +23,7 @@ file_permissions=(
   ["/etc/polkit-1/rules.d"]="0:0:750"
   ["/etc/sudoers.d"]="0:0:750"
   ["/etc/sudoers.d/g_wheel"]="0:0:440"
+  ["/etc/grub.d/15_leksos_nomitigations"]="0:0:755"
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/dmcheck"]="0:0:755"
   ["/usr/local/bin/alci-displaymanager-check"]="0:0:755"

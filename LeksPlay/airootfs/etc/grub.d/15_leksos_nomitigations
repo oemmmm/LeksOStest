@@ -1,0 +1,29 @@
+#!/bin/sh
+# LeksOS: подменю GRUB с теми же ядрами, но без защиты от уязвимостей
+# процессора (mitigations=off). На старых процессорах так заметно быстрее,
+# но опаснее: вредоносный код, например на сайте, теоретически сможет
+# читать чужую память. По умолчанию система грузится с защитой.
+#
+# Убрать подменю:
+#   sudo chmod -x /etc/grub.d/15_leksos_nomitigations
+#   sudo grub-mkconfig -o /boot/grub/grub.cfg
+set -e
+
+linux=/etc/grub.d/10_linux
+[ -x "$linux" ] || exit 0
+
+# Те же пункты, что даёт 10_linux, только с mitigations=off, без вложенного
+# подменю и без режима восстановления.
+entries=$(GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT mitigations=off" \
+	GRUB_DISABLE_SUBMENU=true GRUB_DISABLE_RECOVERY=true \
+	"$linux" 2>/dev/null) || exit 0
+case $entries in
+	*menuentry*) ;;
+	*) exit 0 ;;
+esac
+
+echo "submenu 'LeksOS без защиты процессора (mitigations=off)' \$menuentry_id_option 'leksos-nomitigations' {"
+printf '%s\n' "$entries" | sed \
+	-e "s/\\\$menuentry_id_option 'gnulinux-/\$menuentry_id_option 'leksos-nomitigations-/" \
+	-e "s/^\\(menuentry '[^']*\\)'/\\1 (mitigations=off)'/"
+echo "}"

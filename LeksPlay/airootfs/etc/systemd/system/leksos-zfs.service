@@ -1,0 +1,14 @@
+[Unit]
+Description=LeksOS: загрузка ZFS, если модуль собран для этого ядра
+Documentation=man:modprobe(8)
+# zfs-dkms собирается не для всех ядер: zfs 2.4.4 поддерживает ядра до 7.2,
+# то есть сейчас только linux-leksos-lts. Под ядром без модуля служба
+# просто не запускается, и при загрузке нет ошибки.
+ConditionPathExistsGlob=/usr/lib/modules/%v/updates/dkms/zfs.ko*
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/modprobe zfs
+
+[Install]
+WantedBy=multi-user.target

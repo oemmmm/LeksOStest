@@ -1,0 +1,20 @@
+# mkinitcpio preset для пакета linux-leksos-lts.
+#
+# В live-образе (есть /etc/mkinitcpio.conf.d/archiso.conf) собирается
+# initramfs образа. При установке Calamares удаляет archiso.conf, и этот же
+# файл даёт обычные default и fallback — отдельный preset для установленной
+# системы не нужен.
+
+ALL_kver='/boot/vmlinuz-linux-leksos-lts'
+
+if [[ -e /etc/mkinitcpio.conf.d/archiso.conf ]]; then
+	PRESETS=('archiso')
+	archiso_config='/etc/mkinitcpio.conf.d/archiso.conf'
+	archiso_image='/boot/initramfs-linux-leksos-lts.img'
+else
+	ALL_config='/etc/mkinitcpio.conf'
+	PRESETS=('default' 'fallback')
+	default_image='/boot/initramfs-linux-leksos-lts.img'
+	fallback_image='/boot/initramfs-linux-leksos-lts-fallback.img'
+	fallback_options='-S autodetect'
+fi
